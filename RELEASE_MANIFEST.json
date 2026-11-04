@@ -31,8 +31,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "73cfb3ce911b32910a0749bfddd55e437e3eeebb78fe77b4b6962c2661aa7f4c",
-      "bytes": 19680
+      "sha256": "c9cb39a7fc85b4c2d0cbdfc5f1b788ef6908edff179461162913066d976702ef",
+      "bytes": 19425
     },
     {
       "path": "baselines/base_model.sh",

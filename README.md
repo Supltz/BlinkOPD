@@ -2,8 +2,6 @@
 
 **Teach with Blinks: Breaking Linguistic Momentum in On-Policy Distillation for Fine-Grained Multimodal Perception**
 
-BlinkOPD compares a privileged teacher's eyes-open and eyes-closed predictions on the same student-generated prefix. A frozen first-glance decision increases the gain when the student rollout conflicts with the teacher. Inference uses the student alone.
-
 This release contains the K500 training recipe, reproducible baseline launchers, the corrected six-benchmark evaluator, ten held-out benchmark evaluators, and the experiments and plots for Figures 2, 3 and 5.
 
 ## Models and data
