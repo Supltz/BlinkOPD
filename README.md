@@ -8,13 +8,11 @@ This release contains the K500 training recipe, reproducible baseline launchers,
 
 ## Models and data
 
-| Artifact | Setting | Download |
-| --- | --- | --- |
-| BlinkOPD-4B | Qwen3.5-4B; **1K unique training images**; step 38; approximately 79.1 corrected mean on six benchmarks | [Hugging Face](https://huggingface.co/Danny-Lian/BlinkOPD-4B) |
-| BlinkOPD-9B | Qwen3.5-9B; **K500**; step 38; approximately 79.6 corrected mean on six benchmarks | [Hugging Face](https://huggingface.co/Danny-Lian/BlinkOPD-9B) |
-| Decontaminated training pool | 6,220 questions with student images, original images and tight teacher crops | [Hugging Face](https://huggingface.co/datasets/Danny-Lian/Vision-OPD-6K-Decontaminated) |
-
-**The released 4B weights were trained on 1K images. They are not the output of the released K500 recipe. K500 4B weights are not included.** Training commands below use K500 for both model sizes. No optimizer checkpoints or additional experimental models are distributed.
+| Artifact | Download |
+| --- | --- |
+| BlinkOPD-4B | [Hugging Face](https://huggingface.co/Danny-Lian/BlinkOPD-4B) |
+| BlinkOPD-9B | [Hugging Face](https://huggingface.co/Danny-Lian/BlinkOPD-9B) |
+| Decontaminated training pool | [Hugging Face](https://huggingface.co/datasets/Danny-Lian/Vision-OPD-6K-Decontaminated) |
 
 The data derives from [Vision-OPD-6K](https://huggingface.co/datasets/yuanqianhao/Vision-OPD-6K). We removed 21 of its 6,241 questions whose original images have decoded RGB pixels identical to V*Bench evaluation images. The resulting pool has 6,220 questions. The dataset includes the removal record. This exact-match check against V*Bench does not establish the absence of every possible form of contamination.
 
@@ -47,7 +45,7 @@ python scripts/prepare_data.py
 
 This downloads the decontaminated pool, checks archive SHA-256 values, extracts images, validates the released K500 index, and prepares both model sizes. K500 contains **500 randomly selected questions from the decontaminated 6.2K pool**, repeated six times to give 3,000 training rows. These are repeated examples, not additional unique training images.
 
-The downloader pins dataset revision `5ceec8da2b2c2192c2c4b64626beb1a09240c834`. The three archives total about 37.4 GB; allow approximately 75 GB for cached archives plus extracted files, with additional space for models and training checkpoints.
+The downloader pins dataset revision `06bbe3c31385304e9f6e89a4264e3c95b4998d2c`. The three archives total about 37.4 GB; allow approximately 75 GB for cached archives plus extracted files, with additional space for models and training checkpoints.
 
 The 4B recipe uses the original tight teacher crops. The 9B recipe uses a window with three times the bounding-box width and height, shifted inside the image, and resized with the original capped Lanczos rule. The released frozen first-glance decisions for both sizes were computed on tight crops; the 9B training crop changes only the later teacher view.
 

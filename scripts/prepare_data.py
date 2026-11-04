@@ -9,7 +9,7 @@ from pathlib import Path
 from select_k500 import ROOT, read_pool, validate
 
 DATASET = "Danny-Lian/Vision-OPD-6K-Decontaminated"
-DATASET_REVISION = "5ceec8da2b2c2192c2c4b64626beb1a09240c834"
+DATASET_REVISION = "06bbe3c31385304e9f6e89a4264e3c95b4998d2c"
 
 
 def download_pool(destination, revision):
