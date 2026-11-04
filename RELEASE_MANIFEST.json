@@ -1,8 +1,8 @@
 {
   "release": "BlinkOPD",
-  "training_recipe": "K500",
+  "training_recipe": "500 randomly sampled images",
   "dataset": "Danny-Lian/Vision-OPD-6K-Decontaminated",
-  "dataset_revision": "06bbe3c31385304e9f6e89a4264e3c95b4998d2c",
+  "dataset_revision": "51bc6e1a2530f983a6b2f25192c1037f89f564df",
   "models": {
     "4B": {
       "repo": "Danny-Lian/BlinkOPD-4B",
@@ -31,8 +31,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "c9cb39a7fc85b4c2d0cbdfc5f1b788ef6908edff179461162913066d976702ef",
-      "bytes": 19425
+      "sha256": "36c142258c3674109fcb5a0ea41c836f57b63f38b83fb4cd5ba91a609580c5ac",
+      "bytes": 18904
     },
     {
       "path": "baselines/base_model.sh",
@@ -216,8 +216,8 @@
     },
     {
       "path": "scripts/prepare_data.py",
-      "sha256": "5712986c4e5db155c2e4243f1ca38205f3578add7daee932ac50420539edcdfd",
-      "bytes": 5799
+      "sha256": "8bc0acbddfd78e00026999e9064d97c2cf4dcb4805f5e8d6fd02dafcec354159",
+      "bytes": 5819
     },
     {
       "path": "scripts/print_config.py",
@@ -226,8 +226,8 @@
     },
     {
       "path": "scripts/select_k500.py",
-      "sha256": "49639b4eff24f2e1bc63d792cac658d8b8130cd7b6c735464443cd8e261adb1f",
-      "bytes": 3618
+      "sha256": "28d6d281c2b8bbd8813973023c9e6049771122e8f4aa3da54e61e856b7859f84",
+      "bytes": 3614
     },
     {
       "path": "scripts/train_blinkopd.sh",

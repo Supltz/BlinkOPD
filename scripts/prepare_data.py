@@ -9,7 +9,7 @@ from pathlib import Path
 from select_k500 import ROOT, read_pool, validate
 
 DATASET = "Danny-Lian/Vision-OPD-6K-Decontaminated"
-DATASET_REVISION = "06bbe3c31385304e9f6e89a4264e3c95b4998d2c"
+DATASET_REVISION = "51bc6e1a2530f983a6b2f25192c1037f89f564df"
 
 
 def download_pool(destination, revision):
@@ -105,7 +105,7 @@ def main():
     with (ROOT / "indices" / "first_glance.csv").open(newline="") as f:
         glances = {int(r["row"]): r for r in csv.DictReader(f)}
     if set(glances) != set(selected):
-        raise ValueError("First-glance index differs from K500")
+        raise ValueError("First-glance index differs from the selected image index")
     out.mkdir(parents=True, exist_ok=True)
     for size in ("4b", "9b"):
         by_row = {}

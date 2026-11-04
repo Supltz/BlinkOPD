@@ -44,10 +44,10 @@ def validate(rows, index=ROOT / "indices" / "k500.csv"):
         actual = list(csv.DictReader(f))
     selected = [int(r["row"]) for r in actual]
     if len(selected) != 500 or len(set(selected)) != len(selected) or any(i < 0 or i >= len(rows) for i in selected):
-        raise ValueError("Invalid K500 index")
+        raise ValueError("Invalid 500-image index")
     expected = records(rows, selected)
     if actual != [{k: str(v) for k, v in r.items()} for r in expected]:
-        raise ValueError("K500 selection differs from the released index; check the pool version and row order")
+        raise ValueError("Image selection differs from the released index; check the pool version and row order")
     training = selected * 6
     random.Random(44).shuffle(training)
     return selected, training
@@ -67,7 +67,7 @@ def main():
     rows = read_pool(a.pool)
     selected, training = select(rows, a.size, a.stages, a.seed, a.repeats, a.row_seed)
     if a.check and (selected, training) != validate(rows):
-        raise ValueError("Selection differs from the released K500 index; use the historical sampling arguments in README")
+        raise ValueError("Selection differs from the released image index; use the sampling arguments in README")
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
     rs = records(rows, selected)
