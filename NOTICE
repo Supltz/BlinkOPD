@@ -1,0 +1,23 @@
+BlinkOPD contains modified portions of OPD-Aha, Vision-OPD and verl.
+
+OPD-Aha: https://github.com/Echochef/OPD-Aha
+Vision-OPD: https://github.com/VisionOPD/Vision-OPD
+verl: https://github.com/volcengine/verl
+
+Upstream copyright and license headers are retained in the corresponding files.
+Modifications include eyes-closed teacher inputs, first-glance gain, packed
+Qwen3.5 sequence isolation, teacher-input reuse, multimodal transport, arbitrary
+GPU-count batch padding, checkpoint resume support and portable release entrypoints.
+
+Benchmark helpers under general_eval/official retain their source attribution.
+Their reference implementations include VLMEvalKit
+(https://github.com/open-compass/VLMEvalKit), MathVista
+(https://github.com/lupantech/MathVista), MathVerse
+(https://github.com/ZrrSkywalker/MathVerse), and MATH-Vision
+(https://github.com/mathllm/MATH-V).
+License texts for these components are included in
+general_eval/official/licenses/. MathVista's retained prompt material remains
+under its upstream Creative Commons Attribution-ShareAlike 4.0 terms; the
+MathVerse and MATH-Vision components retain their upstream MIT terms.
+External baselines are downloaded from their official fixed revisions and retain
+their original licenses. Base models and datasets retain their respective terms.

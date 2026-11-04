@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blinkopd"
+dynamic = ["version"]
+description = "BlinkOPD: on-policy self-distillation for fine-grained multimodal perception"
+license = {text = "Apache-2.0"}
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {file = "verl/version/version"}
+
+[tool.setuptools.packages.find]
+include = ["verl", "verl.*"]
+
+[tool.setuptools.package-data]
+verl = [
+  "version/*",
+  "trainer/config/*.yaml",
+  "trainer/config/*/*.yaml",
+]
