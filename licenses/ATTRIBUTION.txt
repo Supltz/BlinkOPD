@@ -1,0 +1,10 @@
+Third-party attribution and license scope
+
+BlinkOPD contains modified portions of OPD-Aha (https://github.com/Echochef/OPD-Aha), Vision-OPD (https://github.com/VisionOPD/Vision-OPD) and verl (https://github.com/volcengine/verl). Upstream copyright and license headers are retained in the corresponding files, and the Apache-2.0 license text for upstream components is preserved in licenses/Apache-2.0.txt (licenses/Apache-2.0.txt). Modifications include eyes-closed teacher inputs, first-glance gain, packed Qwen3.5 sequence isolation, teacher-input reuse, multimodal transport, arbitrary GPU-count batch padding, checkpoint resume support and portable release entrypoints.
+
+Benchmark helpers under general_eval/official/ retain their source attribution. Their reference implementations include VLMEvalKit (https://github.com/open-compass/VLMEvalKit), MathVista (https://github.com/lupantech/MathVista), MathVerse (https://github.com/ZrrSkywalker/MathVerse) and MATH-Vision (https://github.com/mathllm/MATH-V). Their license texts are included in general_eval/official/licenses/ (general_eval/official/licenses/). MathVista's retained prompt material remains under its upstream CC BY-SA 4.0 terms; the MathVerse and MATH-Vision components retain their upstream MIT terms. External baselines are downloaded from their official fixed revisions and retain their original licenses.
+
+The base models are Qwen3.5-4B (https://huggingface.co/Qwen/Qwen3.5-4B) and Qwen3.5-9B (https://huggingface.co/Qwen/Qwen3.5-9B). Base models and datasets retain their respective terms. Original license headers are retained even though implementation comments and docstrings are omitted from the release.
+
+
+BlinkOPD's original contributions are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0) (https://creativecommons.org/licenses/by/4.0/); the full text is provided in LICENSE (LICENSE). Third-party material retains its original licenses and is excluded from this CC BY 4.0 grant.
