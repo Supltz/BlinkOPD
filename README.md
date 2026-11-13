@@ -5,7 +5,7 @@
 ### Teach with Blinks: Breaking Linguistic Momentum in<br>On-Policy Distillation for Fine-Grained Multimodal Perception
 
 <p>
-  <img src="https://img.shields.io/badge/arXiv-Coming%20soon-b31b1b?style=flat-square&amp;logo=arxiv" alt="Paper: coming soon">
+  <a href="https://arxiv.org/pdf/2611.16402"><img src="https://img.shields.io/badge/arXiv-2611.16402-b31b1b?style=flat-square&amp;logo=arxiv" alt="arXiv: 2611.16402"></a>
   <a href="https://huggingface.co/Danny-Lian/BlinkOPD-4B"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-BlinkOPD--4B-FFD21E?style=flat-square" alt="BlinkOPD-4B weights"></a>
   <a href="https://huggingface.co/Danny-Lian/BlinkOPD-9B"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-BlinkOPD--9B-FFD21E?style=flat-square" alt="BlinkOPD-9B weights"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-4C78A8?style=flat-square" alt="Original contributions: CC BY 4.0"></a>
@@ -18,7 +18,7 @@
 ---
 
 <a id="paper-status"></a>
-**📄 Paper:** Coming soon. The arXiv link and citation will be added here when available.
+**📄 Paper:** [Teach with Blinks: Breaking Linguistic Momentum in On-Policy Distillation for Fine-Grained Multimodal Perception](https://arxiv.org/pdf/2611.16402)
 
 <a id="models"></a>
 
